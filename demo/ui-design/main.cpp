@@ -73,7 +73,7 @@ void SwitchToPage3()
 	}
 }
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	Core::VApplication App;
 	VML::VMLMainWindow VMLWindow(&App);

@@ -117,7 +117,7 @@ template <class Type> void SendData(SOCKET Socket, Type *Ptr, const int &Length,
 	send(Socket, (char *)Ptr, Length, Flag);
 }
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	WSAData							 Data;
 	std::map<const char *, ChatUser> UserPool;

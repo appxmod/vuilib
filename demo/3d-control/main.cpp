@@ -1,5 +1,5 @@
 #include "../../include/vml/vmlwidget.h"
-#include <graphics.h>
+//#include <graphics.h>
 
 #define MAX_POINT_AMOUNT 5000
 #define PI				 3.1415926565
@@ -136,7 +136,7 @@ void FpsOnFlush()
 	Fps = 0;
 }
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	Core::VApplication Application;
 	VML::VMLMainWindow MainWindow(&Application);

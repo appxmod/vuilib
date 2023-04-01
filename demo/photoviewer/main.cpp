@@ -14,21 +14,21 @@ std::wstring CodeConvert(const char *String)
 	return Temp.operator const wchar_t *();
 }
 
-int main(int args, const char *argvs[])
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	Core::VApplication PhotoViewerX;
-	if (args == 1)
-	{
-		PVMainWindow PVMainWindow(&PhotoViewerX);
-
-		return PhotoViewerX.Exec();
-	}
-	if (args > 1)
-	{
-		PVMainWindow PVMainWindow(&PhotoViewerX, CodeConvert(argvs[1]));
-
-		return PhotoViewerX.Exec();
-	}
+	//if (args == 1)
+	//{
+	//	PVMainWindow PVMainWindow(&PhotoViewerX);
+	//	return PhotoViewerX.Exec();
+	//}
+	//if (args > 1)
+	//{
+	//	PVMainWindow PVMainWindow(&PhotoViewerX, CodeConvert(argvs[1]));
+	//	return PhotoViewerX.Exec();
+	//}
+	PVMainWindow PVMainWindow(&PhotoViewerX);
+	return PhotoViewerX.Exec();
 
 	return -1;
 }

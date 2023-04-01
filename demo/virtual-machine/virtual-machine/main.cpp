@@ -1,6 +1,6 @@
 #include "vasm-vm.h"
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	VASM::Compiler Compiler(L"./main.S", VASM::CompilerMode::FromFile);
 	Compiler.Compile(L"./MAIN.O");

@@ -7,7 +7,7 @@ void SettingBtnOnClick()
 	SettingWidget->Show();
 }
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	Core::VApplication Applicaiton;
 	VML::VMLMainWindow VMLMainWindow(0, 0, &Applicaiton);

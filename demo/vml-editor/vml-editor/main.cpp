@@ -301,7 +301,7 @@ public:
 	}
 };
 
-int main()
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) 
 {
 	Core::VApplication App;
 	Core::VMainWindow  MainWindow(640, 480, &App);
